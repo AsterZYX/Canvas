@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'iconfont';
+    src: url('../icon/iconfont.ttf');
+}
+
+#createPane:hover, #openPane:hover {
+    -fx-background-color: #aab9d4;
+    -fx-cursor: hand;
+}
+
+#minusButton:hover, #closeButton:hover {
+    -fx-background-color: #aab9d4;
+}

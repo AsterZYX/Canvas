@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'iconfont';
+    src: url('../icon/iconfont.ttf');
+}
+
+#deleteButton :hover{
+    -fx-text-fill:#43609C;
+    -fx-cursor: hand;
+}

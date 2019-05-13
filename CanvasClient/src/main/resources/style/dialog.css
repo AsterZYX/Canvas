@@ -1,0 +1,24 @@
+.dialog-pane {
+    -fx-pref-height: 200px;
+    -fx-pref-width: 400px;
+    -fx-background-color: #ffffff;
+}
+.text-field {
+    /*-fx-background-color: #ffffff;*/
+    /*-fx-border-color: #eeeeee;*/
+}
+.button {
+    -fx-background-color: #43609C;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-text-fill: white;
+    -fx-pref-height: 30px;
+    -fx-pref-width: 60px;
+}
+
+#CancelButton {
+    -fx-background-color: #f6f6f7;
+    -fx-border-color: #43609C;
+    -fx-border-width: 2px;
+    -fx-text-fill: #43609C;
+}

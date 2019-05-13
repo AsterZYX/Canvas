@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="mainPane" minHeight="913.0" minWidth="1435.0" prefHeight="913.0" prefWidth="1411.0" style="-fx-background-color: #F5F5F5;" stylesheets="@../style/draw.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.DrawController">
+   <children>
+      <ImageView fitHeight="267.0" fitWidth="291.0" layoutX="-108.0" layoutY="670.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icon/paint.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="267.0" fitWidth="291.0" layoutX="-33.0" layoutY="396.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icon/paint2.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="85.0" layoutY="53.0" prefHeight="840.0" prefWidth="1330.0" style="-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 ); -fx-background-color: #ffffff;">
+         <children>
+            <Canvas fx:id="myCanvas" height="840.0" onMouseClicked="#onMouseClickedListener" onMouseDragged="#onMouseDraggedListener" onMousePressed="#onMousePressedListener" onMouseReleased="#onMouseReleasedListener" width="1330.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="33.0" prefWidth="1435.0" style="-fx-background-color: #ffffff; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.3) , 5, 0.0 , 0 , 1 );">
+         <children>
+            <ImageView fitHeight="33.0" fitWidth="28.0" layoutX="6.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/画画.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="41.0" layoutY="3.0" prefHeight="27.0" prefWidth="188.0" text=" Welcome to Canvas">
+               <font>
+                  <Font name="Microsoft YaHei Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="minusButton" alignment="CENTER" layoutX="1368.0" layoutY="3.0" onMouseClicked="#clickMinusButton" prefHeight="27.0" prefWidth="28.0" style="-fx-font-size: 15px; -fx-font-family: iconfont;" text="-" />
+            <Label fx:id="closeButton" alignment="CENTER" layoutX="1403.0" layoutY="3.0" onMouseClicked="#clickCloseButton" prefHeight="27.0" prefWidth="28.0" style="-fx-font-size: 15px; -fx-font-family: iconfont;" text="×" />
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="changeButton" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickChangeButton" style="-fx-background-color: #F1F1F1; -fx-background-radius: 50px; -fx-pref-height: 50px; -fx-pref-width: 50px; -fx-min-width: -fx-pref-width; -fx-max-width: -fx-pref-width; -fx-min-height: -fx-pref-height; -fx-max-height: -fx-pref-width; -jfx-button-type: RAISED; -jfx-rippler-fill: rgb(113, 118, 114); -fx-border-color: #F1F1F1; -fx-border-radius: 50; -fx-border-width: 3; -fx-background-color: #005AB5; -fx-cursor: hand;" textFill="WHITE" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="15.0">
+         <font>
+            <Font name="iconfont" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="516.0" prefWidth="772.0" style="-fx-background-color: #F5F5F5; -fx-background-radius: 6; -fx-border-radius: 6;" stylesheets="@../style/login.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.LoginController">
+   <children>
+      <Label alignment="CENTER" layoutX="249.0" layoutY="235.0" prefHeight="110.0" prefWidth="288.0" text="Canvas">
+         <font>
+            <Font name="Microsoft YaHei" size="81.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="createPane" layoutX="294.0" layoutY="384.0" onMouseClicked="#clickCreatePane" prefHeight="43.0" prefWidth="230.0">
+         <children>
+            <Label fx:id="newIcon" layoutX="14.0" prefHeight="43.0" prefWidth="45.0" style="-fx-font-size: 20px; -fx-font-family: iconfont; -fx-text-fill: #cc3300;" text="newIcon" />
+            <Label layoutX="47.0" prefHeight="43.0" prefWidth="143.0" text="Create New Pic">
+               <font>
+                  <Font name="Microsoft YaHei" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="openPane" layoutX="294.0" layoutY="427.0" onMouseClicked="#clickOpenPane" prefHeight="43.0" prefWidth="230.0">
+         <children>
+            <Label layoutX="47.0" prefHeight="43.0" prefWidth="119.0" text="Open">
+               <font>
+                  <Font name="Microsoft YaHei" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="openIcon" layoutX="14.0" prefHeight="43.0" prefWidth="45.0" style="-fx-font-size: 20px; -fx-font-family: iconfont; -fx-text-fill: #003399;" text="openIcon" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="144.0" fitWidth="143.0" layoutX="324.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icon/画笔.png" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="33.0" prefWidth="772.0" style="-fx-background-color: #ffffff; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.3) , 5, 0.0 , 0 , 1 );">
+         <children>
+            <ImageView fitHeight="33.0" fitWidth="28.0" layoutX="6.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/画画.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="41.0" layoutY="3.0" prefHeight="27.0" prefWidth="189.0" text=" Welcome to Canvas">
+               <font>
+                  <Font name="Microsoft YaHei Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="minusButton" alignment="CENTER" layoutX="705.0" layoutY="3.0" onMouseClicked="#clickMinusButton" prefHeight="27.0" prefWidth="28.0" style="-fx-font-size: 15px; -fx-font-family: iconfont;" text="-" />
+            <Label fx:id="closeButton" alignment="CENTER" layoutX="740.0" layoutY="3.0" onMouseClicked="#clickCloseButton" prefHeight="27.0" prefWidth="28.0" style="-fx-font-size: 15px; -fx-font-family: iconfont;" text="×" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
